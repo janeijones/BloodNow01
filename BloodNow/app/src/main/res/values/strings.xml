@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">BloodNow</string>
+
+    <string name="minimum_password">Enter Valid Password</string>
+    <string name="auth_failed">Authentication Failed</string>
+
+    <string name="donation_site">Click Here for More Info: <font color="@color/colorPrimart">https://www.google.com/maps/search/blood+donation+center/</font></string>
+
+    <!-- facts -->
+    <string-array name="quotesArray">
+        <item>1 donation has the potential to save as many as 3 lives.</item>
+        <item>Every 2 seconds someone needs a blood transfusion</item>
+        <item>Approximately 1 out of every 7 people entering the hospital needs blood.</item>
+        <item>3 teaspoons of blood can save a baby's life.</item>
+        <item>If 50 people donate, they could provide enough blood to take care of victims of a major car accident.</item>
+        <item>If 20 people donate, they could help 1 burn victim.</item>
+        <item>Most whole blood donors can give every 8 weeks.</item>
+        <item>Blood only lasts 42 days.</item>
+    </string-array>
+
+</resources>

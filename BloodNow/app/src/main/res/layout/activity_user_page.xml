@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="zetrixweb.com.bloodnow.activities.UserPageActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:padding="5dp"
+        android:text="Blood Now"
+        android:textColor="#FF0000"
+        android:textSize="20sp"
+        android:layout_margin="10dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/usr_notification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_toLeftOf="@+id/logout"
+        android:background="@drawable/round_bg"
+        android:padding="5dp"
+        android:gravity="center"
+        android:text="Notification"
+        android:textColor="#AA9081"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logout"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentRight="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/quotes"
+        android:layout_below="@+id/usr_notification"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/usr_welcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:textStyle="bold|italic"
+            android:text="Welcome User," />
+
+        <TextView
+            android:id="@+id/saveLife"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/usr_welcome"
+            android:layout_margin="5dp"
+            android:textStyle="bold|italic"
+            android:padding="5dp" />
+
+        <LinearLayout
+            android:id="@+id/usr_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/saveLife"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/usr_tvStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:text="Your Status is : "
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <TextView
+        android:id="@+id/usr_tvCity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp" />
+
+        <TextView
+        android:id="@+id/usr_tvphone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/usr_findSite"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:background="#FF0000"
+                android:gravity="center"
+                android:padding="8dp"
+                android:layout_margin="5dp"
+                android:text="Find Donation Site"
+                android:textColor="@android:color/white"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/usr_record"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="0.5"
+                android:background="#FF0000"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="Record Donation"
+                android:textColor="@android:color/white"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/usr_history"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:background="#FF0000"
+                android:gravity="center"
+                android:padding="8dp"
+                android:layout_margin="5dp"
+                android:text="Donation History"
+                android:textColor="@android:color/white"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/usr_update"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:background="#FF0000"
+                android:gravity="center"
+                android:padding="8dp"
+                android:layout_margin="5dp"
+                android:text="Update Information"
+                android:textColor="@android:color/white"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:padding="5dp"-->
+                    <!--android:text="2. Every 2 seconds someone needs a blood transfusion" />-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:padding="5dp"-->
+                    <!--android:text="3. Approximately 1 out of every 7-people entering the hospital needs blood." />-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:padding="5dp"-->
+                    <!--android:text="4. 3 teaspoons of blood can save a baby's life." />-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:padding="5dp"-->
+                    <!--android:text="5. If 50 people donate, they could provide enough blood to take care of victims of a major car accident." />-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:padding="5dp"-->
+                    <!--android:text="6. If 20 people donate, they could help 1 burn victim." />-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:padding="5dp"-->
+                    <!--android:text="7. Most whole blood donors can give every 8 weeks." />-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:padding="5dp"-->
+                    <!--android:text="8. Blood lasts only 42 days." />-->
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/quotes"
+        android:layout_above="@+id/usr_emergency"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="quotes"
+        android:textSize="18sp"
+        android:layout_margin="5dp"
+        android:textColor="@color/red"/>
+
+
+    <TextView
+        android:id="@+id/usr_emergency"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#FF0000"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="Emergency"
+        android:textColor="@android:color/white"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

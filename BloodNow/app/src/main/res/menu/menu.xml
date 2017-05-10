@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item android:id="@+id/action_donation_site"
+        android:title="Donation Site" />
+
+    <item android:id="@+id/action_record_donation"
+        android:title="Record Donation" />
+
+    <item android:id="@+id/action_donation_history"
+        android:title="Donation History" />
+
+    <item android:id="@+id/action_verify"
+        android:title="Verify" />
+
+    <item android:id="@+id/action_update_info"
+        android:title="Update Info" />
+
+    <item android:id="@+id/action_send_notification"
+        android:title="Send Blood Request" />
+</menu>

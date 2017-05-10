@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="zetrixweb.com.bloodnow">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:node="merge">
+        <service android:name=".firebase.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".firebase.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/logo" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@drawable/logo" />
+
+        <activity android:name=".activities.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.RegistrationActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".activities.ForgotPasswordActivity" />
+        <activity
+            android:name=".activities.EmergencyActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".activities.NotifyActivity" />
+        <activity
+            android:name=".activities.UserPageActivity"
+            android:theme="@style/AppTheme2" />
+        <activity android:name=".activities.HomeActivity" />
+        <activity android:name=".activities.DonationSiteActivity" />
+        <activity android:name=".activities.NotificationActivity" />
+        <activity
+            android:name=".activities.RecordDonationActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".activities.DonationHistoryActivity" />
+        <activity android:name=".activities.UpdateInfoActivity"
+            android:windowSoftInputMode="adjustPan" />
+    </application>
+
+</manifest>

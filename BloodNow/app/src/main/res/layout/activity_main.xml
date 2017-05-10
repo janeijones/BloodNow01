@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    tools:context="zetrixweb.com.bloodnow.activities.MainActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@android:color/white"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/logo"/>
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_below="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BloodNow"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#FF0000"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_below="@+id/header"
+        android:id="@+id/input_layout_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/input_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="username"
+            android:maxLines="1"
+            android:inputType="textEmailAddress"
+            android:imeOptions="actionNext"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_password"
+        android:layout_below="@+id/input_layout_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/input_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="password"
+            android:maxLines="1"
+            android:inputType="textPassword"
+            android:imeOptions="actionDone"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:layout_below="@+id/input_layout_password"
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:gravity="right"
+        android:textSize="20sp"
+        android:padding="5dp"
+        android:layout_margin="5dp"/>
+
+    <LinearLayout
+        android:layout_above="@+id/emergency"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:id="@+id/forgot_pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot Password? "
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/ma_tvRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register "
+            android:textSize="18sp"
+            android:textColor="#FF0000"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/emergency"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#FF0000"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="Emergency"
+        android:textColor="@android:color/white"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

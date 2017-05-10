@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rlrmainn"
+    tools:context="zetrixweb.com.bloodnow.activities.RecordDonationActivity">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_date"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/input_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Date"
+            android:focusable="false"
+            android:maxLines="1"
+            android:inputType="date"
+            android:imeOptions="actionNext"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_place"
+        android:layout_below="@+id/input_layout_date"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/input_place"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Place"
+            android:maxLines="1"
+            android:inputType="text"
+            android:imeOptions="actionNext"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_city"
+        android:layout_below="@+id/input_layout_place"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/input_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="City"
+            android:maxLines="1"
+            android:inputType="text"
+            android:imeOptions="actionNext"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:layout_below="@+id/input_layout_city"
+        android:id="@+id/donationType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Type of Donation"
+        android:textSize="15sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="left"/>
+
+    <LinearLayout
+        android:layout_below="@+id/donationType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center">
+
+        <RadioGroup
+            android:id="@+id/typeRadio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp">
+
+            <RadioButton
+                android:id="@+id/ra_rbMale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Non-Emergency"
+                android:textSize="10sp"/>
+
+            <RadioButton
+                android:id="@+id/ra_rbFemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Emergency"
+                android:gravity="center"
+                android:textSize="10sp"/>
+
+            <RadioButton
+                android:id="@+id/ra_rbOther"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Plasma"
+                android:gravity="center"
+                android:textSize="10sp"/>
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/rda_record"
+            android:layout_width="0dp"
+            android:layout_weight="0.33"
+            android:layout_height="wrap_content"
+            android:background="#FF0000"
+            android:text="Request"
+            android:layout_margin="5dp"
+            android:layout_alignParentBottom="true"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:padding="8dp"/>
+
+        <TextView
+            android:id="@+id/rda_reset"
+            android:layout_width="0dp"
+            android:layout_weight="0.33"
+            android:layout_height="wrap_content"
+            android:background="#FF0000"
+            android:text="Reset"
+            android:layout_margin="5dp"
+            android:layout_alignParentBottom="true"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:padding="8dp"/>
+
+        <TextView
+            android:id="@+id/rda_cancel"
+            android:layout_width="0dp"
+            android:layout_weight="0.33"
+            android:layout_height="wrap_content"
+            android:background="#FF0000"
+            android:text="Cancel"
+            android:layout_margin="5dp"
+            android:layout_alignParentBottom="true"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:padding="8dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

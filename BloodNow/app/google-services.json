@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "58918406026",
+    "firebase_url": "https://blood-now.firebaseio.com",
+    "project_id": "blood-now",
+    "storage_bucket": "blood-now.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:58918406026:android:e99ec51f3d2f5ea3",
+        "android_client_info": {
+          "package_name": "zetrixweb.com.bloodnow"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "58918406026-fghnhnenaokni6u7hnvtvlgvoc8vba2o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgu-970LPiPgkZ0aKKUxPhwYCbNPK9U5M"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
